@@ -58,8 +58,8 @@ function startCronJobs() {
   });
 
 
-  // ---------- Sync UpdateLog (MongoDB → MySQL) ทุก 10 นาที ----------
-  cron.schedule("*/10 * * * *", async () => {
+  // ---------- Sync UpdateLog (MongoDB → MySQL) ทุก 5 นาที ----------
+  cron.schedule("*/5 * * * *", async () => {
     console.log(`🔄 Sync-back UpdateLog started at ${new Date().toLocaleString()}`);
     try {
       await syncBackUpdateLog();
