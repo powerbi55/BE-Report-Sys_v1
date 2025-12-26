@@ -4,8 +4,9 @@ const ExternalUserSchema = new mongoose.Schema({
   User_ID: Number,
   Dep_ID: Number,
   Username: String,
-  Password: String,
   Role: String,
+
+  deleted_at: { type: Date, default: null },
   syncedAt: { type: Date, default: Date.now }
 });
 
