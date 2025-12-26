@@ -1,5 +1,5 @@
 const pool = require('../config/mysql');
-const ExternalJob = require('../models/ExternalJob');
+const ExternalJob = require('../models/mongo/JobCache');
 
 async function syncJobs() {
   try {

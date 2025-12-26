@@ -1,6 +1,6 @@
-const ExternalJob = require("../models/ExternalJob");
-const ExternalUser = require("../models/ExternalUser");
-const ExternalUpdateLog = require("../models/ExternalUpdateLog");
+const ExternalJob = require("../models/mongo/JobCache");
+const ExternalUser = require("../models/mongo/UserCache");
+const ExternalUpdateLog = require("../models/mongo/UpdateLog");
 
 
 // =======================================

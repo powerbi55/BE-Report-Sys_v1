@@ -1,5 +1,5 @@
 const pool = require("../config/mysql");
-const ExternalUpdateLog = require("../models/ExternalUpdateLog");
+const ExternalUpdateLog = require("../models/mongo/UpdateLog");
 
 module.exports = async function syncBackUpdateLog() {
   try {

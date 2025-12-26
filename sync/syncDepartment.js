@@ -1,5 +1,5 @@
 const pool = require('../config/mysql');
-const ExternalDepartment = require('../models/ExternalDepartment');
+const ExternalDepartment = require('../models/mongo/DepartmentCache');
 
 async function syncDepartment() {
   try {

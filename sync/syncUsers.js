@@ -1,5 +1,5 @@
 const mysql = require("../config/mysql");
-const ExternalUser = require("../models/ExternalUser");
+const ExternalUser = require("../models/mongo/UserCache");
 const bcrypt = require("bcryptjs");
 
 module.exports = async function syncUsers() {
